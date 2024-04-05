@@ -35,7 +35,7 @@ header h1 span {
   margin-left: 10px;
 }
 
-.centered {
+.centered, .center{
   display: grid;
   gap: 15px;
   grid-template-columns: repeat(3, 1fr);
@@ -65,4 +65,5 @@ button:hover {
 
 .hidden {
   display: none;
+
 }
