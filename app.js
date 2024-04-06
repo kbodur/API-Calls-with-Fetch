@@ -11,6 +11,13 @@ async function loadQuestions(){
     a.setAttribute("class","card")
     a.innerHTML='<h2>'+response[i].category+'</h2><p>'+response[i].question+'</p><button class="show-answer-'+i+'" onclick="answers(this)">Show Answer</button><p id="'+i+'" class="hidden">CORRECT ANSWER</p>'
     box.append(a)
+    if(response[i].difficulty==="medium"){
+        a.style.border="2px solid yellow"
+    } else if(response[i].difficulty==="hard"){
+        a.style.border="2px solid red"
+    }
+
+
     }
     return response;
  }
