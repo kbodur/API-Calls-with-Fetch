@@ -17,7 +17,6 @@ async function loadQuestions(){
  
  function answers(a){
     let index = a.getAttribute('class')[a.getAttribute('class').length-1]
-    console.log(response[index].correct_answer)
     let ans=document.getElementById(index)
     ans.style.display="block"
    
